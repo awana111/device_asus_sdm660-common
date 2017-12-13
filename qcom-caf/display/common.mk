@@ -15,7 +15,7 @@ display_config_version := $(shell \
     then echo DISPLAY_CONFIG_1_9; fi)
 
 #Common C flags
-common_flags := -DDEBUG_CALC_FPS -Wno-missing-field-initializers
+common_flags := -Wno-missing-field-initializers
 common_flags += -Wconversion -Wall -Werror -Wno-sign-conversion
 common_flags += -DUSE_GRALLOC1
 ifeq ($(TARGET_IS_HEADLESS), true)
