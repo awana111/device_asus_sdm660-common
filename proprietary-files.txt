@@ -259,6 +259,7 @@ vendor/lib64/liboemcrypto.so|7380e52e0ec82fef90a9aa1ea305e356d7cfef29
 # DRM-Widevine-HDCP - from S62Pro RKQ1.210406.002
 vendor/lib64/libhdcpsrm.so
 vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libspl.so
 
 # DSP - from S62Pro RKQ1.210406.002
 vendor/bin/dspservice
