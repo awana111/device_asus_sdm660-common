@@ -491,8 +491,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/qcom-caf/common/libqti-perfd-client \
-    vendor/qcom/opensource/usb/etc
+    hardware/qcom-caf/common/libqti-perfd-client
 
 QCOM_SOONG_NAMESPACE := \
     $(COMMON_PATH)/qcom-caf
