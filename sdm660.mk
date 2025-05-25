@@ -459,6 +459,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    fstab.zram \
     init.qcom.asus.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
