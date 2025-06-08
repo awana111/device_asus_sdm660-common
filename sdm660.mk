@@ -524,10 +524,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal-service.qti
 
-# Touch
-PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.asus_sdm660
-
 # USB
 PRODUCT_PACKAGES += \
     usb_compositions.conf \
