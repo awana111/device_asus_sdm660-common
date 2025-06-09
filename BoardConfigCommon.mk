@@ -184,11 +184,7 @@ ODM_MANIFEST_NFC_FILES := $(COMMON_PATH)/manifest_nfc.xml
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sdm660)
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
-
-# Lineage Health
-$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/input_suspend)
 
 # LMKD
 TARGET_LMKD_STATS_LOG := true
