@@ -773,4 +773,12 @@
         <instance>slot2</instance>
     </interface>
 </hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.radio.config</name>
+    <version>1.0-2</version>
+    <interface>
+        <name>IRadioConfig</name>
+        <instance>default</instance>
+    </interface>
+</hal>
 </compatibility-matrix>
