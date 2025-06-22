@@ -204,9 +204,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
     android.hardware.health-service.qti_recovery
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1.vendor    
+
+$(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
+$(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
+$(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/charging_enabled)
+$(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 
 # GMS Permissions
 PRODUCT_COPY_FILES += \
@@ -238,6 +243,9 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# Init
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_sdm660)
 
 # Input
 PRODUCT_COPY_FILES += \
