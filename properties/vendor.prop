@@ -142,6 +142,8 @@ vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 ro.telephony.default_network=20,20
 ro.com.android.dataroaming=false
 persist.vendor.radio.enableadvancedscan=false
+persist.vendor.radio.poweron_opt=0
+persist.vendor.radio.poweron_ign=0
 
 # Radio - IMS
 persist.dbg.volte_avail_ovr=1
