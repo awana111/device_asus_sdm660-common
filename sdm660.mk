@@ -17,7 +17,7 @@ PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
 
 # Kernel
-PRODUCT_ENABLE_UFFD_GC := true
+PRODUCT_ENABLE_UFFD_GC := false
 
 # Default is nosdcard, S/W button enabled in resource
 PRODUCT_CHARACTERISTICS := nosdcard
