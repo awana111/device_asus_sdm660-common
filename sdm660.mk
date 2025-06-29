@@ -12,10 +12,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# APEX
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/ld.config.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/swcodec/ld.config.txt
-
 # Kernel
 PRODUCT_ENABLE_UFFD_GC := false
 
