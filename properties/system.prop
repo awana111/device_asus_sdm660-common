@@ -34,6 +34,8 @@ persist.hwc.mdpcomp.enable=true
 # Fling
 ro.min.fling_velocity=160
 ro.max.fling_velocity=20000
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
 
 # FM
 vendor.hw.fm.init=0
@@ -47,11 +49,12 @@ ro.com.google.rlz_ap_whitelist=y0,y5,y6,y7,y9
 persist.vendor.overlay.izat.optin=rro
 
 # Graphics
-debug.sf.disable_backpressure=0
-debug.sf.latch_unsignaled=0
+debug.sf.auto_latch_unsignaled=0
 debug.sf.predict_hwc_composition_strategy=0
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
+persist.sys.purgeable_assets=1
+ro.config.disable.hw_accel=false
 sdm.debug.disable_skip_validate=1
 
 # HWUI
@@ -66,6 +69,8 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
+hwui.render_dirty_regions=false
+hwui.disable_vsync=true
 
 # IMS
 persist.dbg.ims_volte_enable=1
